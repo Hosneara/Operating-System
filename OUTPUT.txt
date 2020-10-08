@@ -1,0 +1,379 @@
+This is a CHORD system. It is an example of Structured Peer-to-Peer architecture.
+
+In this implementation, you can add, delete, lookup any physical/logical node if that exists in the CHORD.
+
+As per instruction, initially there is one node in the CHORD (which is 0).
+
+You can delete any physical node from the CHORD till there is at least one node left.
+
+Following is the instruction for performing add/delete/lookup operations.
+Let's start!
+
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 14
+
+14 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 14]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 14
+
+
+Randomly selected already exists in the CHORD. Try again.
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 26
+
+26 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 14, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 18
+
+18 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 14, 18, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 24
+
+24 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 14, 18, 24, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 8
+
+8 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 8, 14, 18, 24, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 5
+
+5 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 5, 8, 14, 18, 24, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 2
+**************************************************
+
+Physical nodes in CHORD till now: [0, 5, 8, 14, 18, 24, 26]
+Which node do you want to delete? 15
+
+
+Sorry, 15 does not exist in the physical nodes list of the CHORD. Please try another node.
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 2
+**************************************************
+
+Physical nodes in CHORD till now: [0, 5, 8, 14, 18, 24, 26]
+Which node do you want to delete? 14
+14 successfully deleted!
+
+Physical nodes in CHORD till now: [0, 5, 8, 18, 24, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 3
+**************************************************
+
+Physical nodes in CHORD till now: [0, 5, 8, 18, 24, 26]
+
+
+You can choose any node to lookup between 0 and 31 inclusive
+Which node do you want to lookup? 18
+**************************************************
+
+18 is already in the physical node list. So, it is located within Node-18
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 3
+**************************************************
+
+Physical nodes in CHORD till now: [0, 5, 8, 18, 24, 26]
+
+
+You can choose any node to lookup between 0 and 31 inclusive
+Which node do you want to lookup? 10
+**************************************************
+
+Lookup started randomly @Node-18
+10 not found in the finger table of 18
+Lookup started @Node-5
+10 not found in the finger table of 5
+Lookup started @Node-8
+10 is located @Node-18
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 3
+**************************************************
+
+Physical nodes in CHORD till now: [0, 5, 8, 18, 24, 26]
+
+
+You can choose any node to lookup between 0 and 31 inclusive
+Which node do you want to lookup? 7
+**************************************************
+
+Lookup started randomly @Node-26
+7 not found in the finger table of 26
+Lookup started @Node-0
+7 not found in the finger table of 0
+Lookup started @Node-5
+7 is located @Node-8
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 2
+**************************************************
+
+Physical nodes in CHORD till now: [0, 5, 8, 18, 24, 26]
+Which node do you want to delete? 24
+24 successfully deleted!
+
+Physical nodes in CHORD till now: [0, 5, 8, 18, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 8
+
+
+Randomly selected already exists in the CHORD. Try again.
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 17
+
+17 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 5, 8, 17, 18, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 3
+**************************************************
+
+Physical nodes in CHORD till now: [0, 5, 8, 17, 18, 26]
+
+
+You can choose any node to lookup between 0 and 31 inclusive
+Which node do you want to lookup? 32
+**************************************************
+
+
+Sorry, 32 must be between 0 and 31 inclusive.
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 30
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 1
+**************************************************
+Randomly selected node in between 0 and 31 is: 4
+
+4 successfully added to the CHORD!
+
+Physical nodes in CHORD till now: [0, 4, 5, 8, 17, 18, 26]
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 3
+**************************************************
+
+Physical nodes in CHORD till now: [0, 4, 5, 8, 17, 18, 26]
+
+
+You can choose any node to lookup between 0 and 31 inclusive
+Which node do you want to lookup? 30
+**************************************************
+
+Lookup started randomly @Node-0
+30 not found in the finger table of 0
+Lookup started @Node-4
+30 not found in the finger table of 4
+Lookup started @Node-5
+30 not found in the finger table of 5
+Lookup started @Node-8
+30 not found in the finger table of 8
+Lookup started @Node-17
+30 not found in the finger table of 17
+Lookup started @Node-18
+30 not found in the finger table of 18
+Lookup started @Node-26
+30 is located @Node-0
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 4
+**************************************************
+Showing CHORD...
+You have to close the tkinter window to enter a choice again.
+
+**************************************************
+Press:
+1 Add a random node
+2 Delete a node
+3 Lookup any node
+4 Show CHORD
+5 Exit the program
+**************************************************
+Enter your choice: 5
+**************************************************
+Program exited successfully.
